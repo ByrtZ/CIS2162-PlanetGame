@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">PlanetGame</string>
+    <string name="app_name">Planetarium</string>
+    <string name="planet_game">Planet Game</string>
 </resources>
