@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -25,4 +25,76 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/earth_gif"
+        android:layout_width="125dp"
+        android:layout_height="81dp"
+        android:src="@drawable/earth"
+        tools:ignore="DuplicateIds,MissingConstraints"
+        tools:layout_editor_absoluteX="223dp"
+        tools:layout_editor_absoluteY="55dp" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/jupiter_gif"
+        android:layout_width="106dp"
+        android:layout_height="93dp"
+        android:src="@drawable/jupiter"
+        tools:ignore="DuplicateIds,MissingConstraints"
+        tools:layout_editor_absoluteX="223dp"
+        tools:layout_editor_absoluteY="285dp" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/mars_gif"
+        android:layout_width="86dp"
+        android:layout_height="85dp"
+        android:src="@drawable/mars"
+        tools:ignore="DuplicateIds,MissingConstraints"
+        tools:layout_editor_absoluteX="426dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/mercury_gif"
+        android:layout_width="120dp"
+        android:layout_height="112dp"
+        android:src="@drawable/mercury"
+        tools:ignore="DuplicateIds,MissingConstraints"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="34dp" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/neptune_gif"
+        android:layout_width="132dp"
+        android:layout_height="104dp"
+        android:src="@drawable/neptune"
+        tools:ignore="DuplicateIds,MissingConstraints"
+        tools:layout_editor_absoluteX="352dp"
+        tools:layout_editor_absoluteY="266dp" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/saturn_gif"
+        android:layout_width="166dp"
+        android:layout_height="132dp"
+        android:src="@drawable/saturn"
+        tools:ignore="DuplicateIds,MissingConstraints"
+        tools:layout_editor_absoluteX="549dp"
+        tools:layout_editor_absoluteY="34dp" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/uranus_gif"
+        android:layout_width="138dp"
+        android:layout_height="127dp"
+        android:src="@drawable/uranus"
+        tools:ignore="DuplicateIds,MissingConstraints"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="251dp" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/venus_gif"
+        android:layout_width="139dp"
+        android:layout_height="102dp"
+        android:src="@drawable/venus"
+        tools:ignore="DuplicateIds,MissingConstraints"
+        tools:layout_editor_absoluteX="554dp"
+        tools:layout_editor_absoluteY="266dp" />
+</RelativeLayout>

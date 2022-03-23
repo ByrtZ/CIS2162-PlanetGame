@@ -5,9 +5,9 @@ public class Neptune extends Planet {
     public Neptune() {
         this.planetName = "Neptune";
         this.planetColour = "Opaque Blue";
-        this.planetSize = 0;
-        this.planetWeight = 0;
-        this.planetGravity = 0;
+        this.planetSize = "24764.0km";
+        this.planetDistFromSun = "30.1";
+        this.planetDayLength = "0d 16h 6m";
     }
 
     @Override
@@ -21,17 +21,17 @@ public class Neptune extends Planet {
     }
 
     @Override
-    int getPlanetSize() {
+    String getPlanetSize() {
         return this.planetSize;
     }
 
     @Override
-    int getPlanetWeight() {
-        return this.planetWeight;
+    String getPlanetDistFromSun() {
+        return this.planetDistFromSun;
     }
 
     @Override
-    double getPlanetGravity() {
-        return this.planetGravity;
+    String getPlanetDayLength() {
+        return this.planetDayLength;
     }
 }

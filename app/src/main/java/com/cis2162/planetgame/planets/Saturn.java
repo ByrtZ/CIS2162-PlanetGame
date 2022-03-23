@@ -5,9 +5,9 @@ public class Saturn extends Planet {
     public Saturn() {
         this.planetName = "Saturn";
         this.planetColour = "Beige with red/brown belt";
-        this.planetSize = 0;
-        this.planetWeight = 0;
-        this.planetGravity = 0;
+        this.planetSize = "60268.0km";
+        this.planetDistFromSun = "9.5au";
+        this.planetDayLength = "0d 10h 42m";
     }
 
     @Override
@@ -21,17 +21,17 @@ public class Saturn extends Planet {
     }
 
     @Override
-    int getPlanetSize() {
+    String getPlanetSize() {
         return this.planetSize;
     }
 
     @Override
-    int getPlanetWeight() {
-        return this.planetWeight;
+    String getPlanetDistFromSun() {
+        return this.planetDistFromSun;
     }
 
     @Override
-    double getPlanetGravity() {
-        return this.planetGravity;
+    String getPlanetDayLength() {
+        return this.planetDayLength;
     }
 }

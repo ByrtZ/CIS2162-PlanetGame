@@ -5,9 +5,9 @@ public class Jupiter extends Planet {
     public Jupiter() {
         this.planetName = "Jupiter";
         this.planetColour = "Beige with red/brown belt";
-        this.planetSize = 0;
-        this.planetWeight = 0;
-        this.planetGravity = 0;
+        this.planetSize = "71492.0km";
+        this.planetDistFromSun = "5.2au";
+        this.planetDayLength = "0d 9h 56m";
     }
 
     @Override
@@ -21,17 +21,17 @@ public class Jupiter extends Planet {
     }
 
     @Override
-    int getPlanetSize() {
+    String getPlanetSize() {
         return this.planetSize;
     }
 
     @Override
-    int getPlanetWeight() {
-        return this.planetWeight;
+    String getPlanetDistFromSun() {
+        return this.planetDistFromSun;
     }
 
     @Override
-    double getPlanetGravity() {
-        return this.planetGravity;
+    String getPlanetDayLength() {
+        return this.planetDayLength;
     }
 }

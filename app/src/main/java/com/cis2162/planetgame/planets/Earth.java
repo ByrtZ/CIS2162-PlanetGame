@@ -5,9 +5,9 @@ public class Earth extends Planet {
     public Earth() {
         this.planetName = "Earth";
         this.planetColour = "Blue/Green";
-        this.planetSize = 0;
-        this.planetWeight = 0;
-        this.planetGravity = 9.8;
+        this.planetSize = "6378.1km"; // Radius
+        this.planetDistFromSun = "1au";
+        this.planetDayLength = "1d 0h 0m";
     }
 
     @Override
@@ -21,17 +21,17 @@ public class Earth extends Planet {
     }
 
     @Override
-    int getPlanetSize() {
+    String getPlanetSize() {
         return this.planetSize;
     }
 
     @Override
-    int getPlanetWeight() {
-        return this.planetWeight;
+    String getPlanetDistFromSun() {
+        return this.planetDistFromSun;
     }
 
     @Override
-    double getPlanetGravity() {
-        return this.planetGravity;
+    String getPlanetDayLength() {
+        return this.planetDayLength;
     }
 }

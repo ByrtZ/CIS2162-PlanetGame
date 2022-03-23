@@ -5,9 +5,9 @@ public class Venus extends Planet{
     public Venus() {
         this.planetName = "Venus";
         this.planetColour = "Yellow/White";
-        this.planetSize = 0;
-        this.planetWeight = 0;
-        this.planetGravity = 0;
+        this.planetSize = "6051.8km"; // Radius
+        this.planetDistFromSun = "0.7au";
+        this.planetDayLength = "116d 18h 0m";
     }
 
     @Override
@@ -21,17 +21,17 @@ public class Venus extends Planet{
     }
 
     @Override
-    int getPlanetSize() {
+    String getPlanetSize() {
         return this.planetSize;
     }
 
     @Override
-    int getPlanetWeight() {
-        return this.planetWeight;
+    String getPlanetDistFromSun() {
+        return this.planetDistFromSun;
     }
 
     @Override
-    double getPlanetGravity() {
-        return this.planetGravity;
+    String getPlanetDayLength() {
+        return this.planetDayLength;
     }
 }

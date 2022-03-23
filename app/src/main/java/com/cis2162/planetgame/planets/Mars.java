@@ -5,9 +5,9 @@ public class Mars extends Planet {
     public Mars() {
         this.planetName = "Mars";
         this.planetColour = "Dusty Red";
-        this.planetSize = 0;
-        this.planetWeight = 0;
-        this.planetGravity = 9.8;
+        this.planetSize = "3396.2km";
+        this.planetDistFromSun = "1.5au";
+        this.planetDayLength = "1d 0h 37m";
     }
 
     @Override
@@ -21,17 +21,17 @@ public class Mars extends Planet {
     }
 
     @Override
-    int getPlanetSize() {
+    String getPlanetSize() {
         return this.planetSize;
     }
 
     @Override
-    int getPlanetWeight() {
-        return this.planetWeight;
+    String getPlanetDistFromSun() {
+        return this.planetDistFromSun;
     }
 
     @Override
-    double getPlanetGravity() {
-        return this.planetGravity;
+    String getPlanetDayLength() {
+        return this.planetDayLength;
     }
 }

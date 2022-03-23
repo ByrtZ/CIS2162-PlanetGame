@@ -5,9 +5,9 @@ public class Uranus extends Planet {
     public Uranus() {
         this.planetName = "Uranus";
         this.planetColour = "Opaque Blue";
-        this.planetSize = 0;
-        this.planetWeight = 0;
-        this.planetGravity = 0;
+        this.planetSize = "25559.0km";
+        this.planetDistFromSun = "19.8au";
+        this.planetDayLength = "0d 17h 14km";
     }
 
     @Override
@@ -21,17 +21,17 @@ public class Uranus extends Planet {
     }
 
     @Override
-    int getPlanetSize() {
+    String getPlanetSize() {
         return this.planetSize;
     }
 
     @Override
-    int getPlanetWeight() {
-        return this.planetWeight;
+    String getPlanetDistFromSun() {
+        return this.planetDistFromSun;
     }
 
     @Override
-    double getPlanetGravity() {
-        return this.planetGravity;
+    String getPlanetDayLength() {
+        return this.planetDayLength;
     }
 }
