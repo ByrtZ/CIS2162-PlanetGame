@@ -1,33 +1,43 @@
-package com.cis2162.planetgame;
+package com.cis2162.planetgame.activity;
 
-import androidx.appcompat.app.AppCompatActivity;
+import androidx.annotation.Nullable;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.WindowManager;
+import android.widget.Button;
+
+import com.cis2162.planetgame.R;
 
 import pl.droidsonroids.gif.GifImageView;
 
-public class MainActivity extends AppCompatActivity {
-
+public class GameActivity extends Activity {
     private float x;
     private float y;
     private float dx;
     private float dy;
 
+    Button returnToHome;
     GifImageView mercury_gif, venus_gif, earth_gif, mars_gif, saturn_gif, jupiter_gif, uranus_gif, neptune_gif;
 
     @SuppressLint("ClickableViewAccessibility")
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_game);
+        returnToHome = findViewById(R.id.backToHome);
 
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
 
+        returnToHome.setOnClickListener(v -> {
+            Intent intent = new Intent(this, StartActivity.class);
+            startActivity(intent);
+        });
 
         mercury_gif = findViewById(R.id.mercury_gif);
         mercury_gif.setOnTouchListener((v, event) -> {
