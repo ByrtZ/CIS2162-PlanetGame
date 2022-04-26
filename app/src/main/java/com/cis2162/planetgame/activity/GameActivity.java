@@ -85,24 +85,19 @@ public class GameActivity extends Activity {
                     Drawable dragged_draw = dragged.getDrawable();
 
                     dragged.setImageDrawable(target_draw);
+                    int draggedId = dragged.getId();
+                    dragged.setId(target.getId());
+
                     target.setImageDrawable(dragged_draw);
+                    target.setId(draggedId);
 
-                    System.out.println("BEFORE SWAP: " + planetList.toString());
                     Collections.swap(planetList, planetList.indexOf(dragged.getId()), planetList.indexOf(target.getId()));
-                    /*int k = dragged.getId();
-                    int j = planetList.indexOf(target.getId());
-                    planetList.set(planetList.indexOf(dragged.getId()), target.getId());
-                    planetList.set(j, k);*/
-
-                    System.out.println("Swapped planets " + dragged.getDrawable().toString() + " and " + target.getDrawable().toString());
-                    System.out.println("AFTER SWAP: " + planetList.toString());
-                    System.out.println("FINAL LIST: " + finalPlanetList.toString());
                     for(int i = 0; i < planetList.size(); i++) {
                         if(!planetList.get(i).equals(finalPlanetList.get(i))) {
                             break;
                         }
-                        if(i == planetList.size()-1) {
-                            Intent intent = new Intent(this, StartActivity.class);
+                        if(i == planetList.size() - 1) {
+                            Intent intent = new Intent(this, EndActivity.class);
                             startActivity(intent);
                         }
                     }

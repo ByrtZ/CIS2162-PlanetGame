@@ -3,4 +3,6 @@
     <string name="planet_game">Planet Game</string>
     <string name="start_game">Start Game</string>
     <string name="back_to_home">Back to Home</string>
+    <string name="end_text">Congratulations!</string>
+    <string name="return_game">Return to Home</string>
 </resources>
